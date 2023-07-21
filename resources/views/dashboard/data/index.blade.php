@@ -4,7 +4,7 @@
   
   
   <div class="table-responsive col-lg-8 mx-5 mt-4">
-    {{-- <a href="/dashboard/product/create" class="btn btn-primary mb-3">Tambah User</a> --}}
+    <a href="/dashboard/product/create" class="btn btn-primary mb-3">Tambah Data User</a>
     <table class="table table-striped table-sm">
       <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
         <h1 class="h2">Data User</h1>
@@ -17,7 +17,7 @@
       <thead>
         <tr>
           <th scope="col">ID</th>
-          <th scope="col">Name</th>
+          <th scope="col">Nama</th>
           <th scope="col">Telepon</th>
           <th scope="col">Alamat</th>
           <th scope="col">Kavling</th>

@@ -8,6 +8,7 @@ use App\Http\Requests\MassDestroyDataRequest;
 use App\Http\Requests\StoreDataRequest;
 use App\Http\Requests\UpdateDataRequest;
 use App\Models\Data as ModelsData;
+use App\Models\User as ModelsUser;
 use App\User;
 use Gate;
 use Illuminate\Http\Request;
@@ -23,8 +24,8 @@ class DataController extends Controller
     public function index()
     {
         $data = ModelsData::with('user')->get();
-
-        return view('data.index', compact('data'));
+        $user = ModelsUser::paginate(7);
+        return view('dashboard.data.index', compact('data', 'user'));
     }
 
     /**
@@ -36,7 +37,7 @@ class DataController extends Controller
     {
         $users = User::pluck('name', 'id');
 
-        return view('admin.data.create', compact('users'));
+        return view('dashboard.data.create', compact('users'));
     }
 
     /**
@@ -49,7 +50,7 @@ class DataController extends Controller
     {
         Data::create($request->all());
 
-        return redirect()->route('admin.data.index');
+        return redirect()->route('dashboard.data.index');
     }
 
     /**
@@ -60,7 +61,7 @@ class DataController extends Controller
      */
     public function show(Data $data)
     {
-        return view('admin.data.show', compact('data'));
+        return view('dashboard.data.show', compact('data'));
     }
 
     /**
@@ -73,7 +74,7 @@ class DataController extends Controller
     {
         $users = User::pluck('name', 'id');
 
-        return view('admin.data.edit', compact('data', 'users'));
+        return view('dashboard.data.edit', compact('data', 'users'));
     }
 
     /**
@@ -87,7 +88,7 @@ class DataController extends Controller
     {
         $data->update($request->all());
 
-        return redirect()->route('admin.data.index');
+        return redirect()->route('dashboard.data.index');
     }
 
     /**
