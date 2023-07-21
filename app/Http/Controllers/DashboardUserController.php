@@ -44,7 +44,7 @@ class DashboardUserController extends Controller
     public function store(Request $request)
     {
         $validatedData = $request->validate([
-            'name' => 'required|unique:users',
+            'nama' => 'required|unique:users',
             'email' => 'required|unique:users',
             'phone' => 'required|numeric',
             'password' => 'required|min:8',

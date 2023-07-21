@@ -16,7 +16,7 @@
             <div class="card body">
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item"><b>ID :  </b>{{ $user->id }}</li>
-                    <li class="list-group-item"><b>Name : </b>{{ $user->name }}</li>
+                    <li class="list-group-item"><b>Nama : </b>{{ $user->nama }}</li>
                     <li class="list-group-item"><b>Email : </b>{{ $user->email }}</li>
                     <li class="list-group-item"><b>Phone : </b>{{ $user->phone }}</li>
                     <li class="list-group-item"><b>Role : </b>{{ $user->role }}</li>

@@ -19,6 +19,7 @@
                     <li class="list-group-item"><b>ID :  </b>{{ $user->id }}</li>
                     <li class="list-group-item"><b>Nama : </b>{{ $user->nama }}</li>
                     <li class="list-group-item"><b>Email : </b>{{ $user->email }}</li>
+                    <li class="list-group-item"><b>Phone : </b>{{ $user->phone }}</li>
                     <li class="list-group-item"><b>Role : </b>{{ $user->role }}</li>
             </div>
             <a class="btn btn-success mt-3 mb-3" href="/admin/member">kembali</a>
