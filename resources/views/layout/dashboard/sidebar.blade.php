@@ -16,17 +16,22 @@
       <li class="nav-item">
         <a class="nav-link" data-bs-toggle="collapse" href="#member" aria-expanded="false" aria-controls="member">
           <i class="menu-icon mdi mdi-account"></i>
-          <span class="menu-title">Member</span>
+          <span class="menu-title">User</span>
           <i class="menu-arrow"></i>
         </a>
         <div class="collapse" id="member">
           <ul class="nav flex-column sub-menu">
-            <li class="nav-item"> <a class="nav-link" href="/admin/member">Manage Member</a></li>
+            <li class="nav-item"> <a class="nav-link" href="/admin/member">Manage User</a></li>
           </ul>
         </div>
         <div class="collapse" id="member">
           <ul class="nav flex-column sub-menu">
-            <li class="nav-item"> <a class="nav-link" href="/admin/member/create">Add Member</a></li>
+            <li class="nav-item"> <a class="nav-link" href="/admin/member/create">Add User</a></li>
+          </ul>
+        </div>
+        <div class="collapse" id="member">
+          <ul class="nav flex-column sub-menu">
+            <li class="nav-item"> <a class="nav-link" href="/admin/datauser">Data User</a></li>
           </ul>
         </div>
       </li>
