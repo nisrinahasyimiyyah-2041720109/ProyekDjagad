@@ -35,7 +35,7 @@ class DataController extends Controller
      */
     public function create()
     {
-        $users = User::pluck('name', 'id');
+        $users = ModelsUser::pluck('nama', 'id');
 
         return view('dashboard.data.create', compact('users'));
     }
@@ -48,7 +48,7 @@ class DataController extends Controller
      */
     public function store(StoreDataRequest $request)
     {
-        Data::create($request->all());
+        ModelsData::create($request->all());
 
         return redirect()->route('dashboard.data.index');
     }
@@ -59,7 +59,7 @@ class DataController extends Controller
      * @param  \App\Models\Data  $data
      * @return \Illuminate\Http\Response
      */
-    public function show(Data $data)
+    public function show(ModelsData $data)
     {
         return view('dashboard.data.show', compact('data'));
     }
@@ -70,9 +70,9 @@ class DataController extends Controller
      * @param  \App\Models\Data  $data
      * @return \Illuminate\Http\Response
      */
-    public function edit(Data $data)
+    public function edit(ModelsData $data)
     {
-        $users = User::pluck('name', 'id');
+        $users = ModelsUser::pluck('nama', 'id');
 
         return view('dashboard.data.edit', compact('data', 'users'));
     }
@@ -84,7 +84,7 @@ class DataController extends Controller
      * @param  \App\Models\Data  $data
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateDataRequest $request, Data $data)
+    public function update(UpdateDataRequest $request, ModelsData $data)
     {
         $data->update($request->all());
 
@@ -97,7 +97,7 @@ class DataController extends Controller
      * @param  \App\Models\Data  $data
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Data $data)
+    public function destroy(ModelsData $data)
     {
         $data->delete();
 
