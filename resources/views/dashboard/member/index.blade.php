@@ -17,9 +17,8 @@
       <thead>
         <tr>
           <th scope="col">ID</th>
-          <th scope="col">Name</th>
+          <th scope="col">Nama</th>
           <th scope="col">Email</th>
-          <th scope="col">Phone</th>
           <th scope="col">Verify</th>
           <th scope="col">Action</th>
         </tr>
@@ -31,9 +30,8 @@
         @endif
         <tr>
           <td>{{ $u->id }}</td>
-          <td>{{ $u->name }}</td>
+          <td>{{ $u->nama }}</td>
           <td>{{ $u->email }}</td>
-          <td>{{ $u->phone }}</td>
           <td>       
               @if( $u->verify  == 0)
               <form action="/verify" method="get" class="d-inline">
