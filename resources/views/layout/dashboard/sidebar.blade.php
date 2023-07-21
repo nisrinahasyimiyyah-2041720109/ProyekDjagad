@@ -29,11 +29,11 @@
             <li class="nav-item"> <a class="nav-link" href="/admin/member/create">Add User</a></li>
           </ul>
         </div>
-        <div class="collapse" id="member">
+        {{-- <div class="collapse" id="member">
           <ul class="nav flex-column sub-menu">
             <li class="nav-item"> <a class="nav-link" href="/admin/datauser">Data User</a></li>
           </ul>
-        </div>
+        </div> --}}
       </li>
       <li class="nav-item">
         <a class="nav-link" data-bs-toggle="collapse" href="#admin" aria-expanded="false" aria-controls="admin">
@@ -52,11 +52,11 @@
           </ul>
         </div>
       </li>
-      <li class="nav-item nav-category">Bimbel</li>
+      <li class="nav-item nav-category">Data</li>
       <li class="nav-item">
-        <a class="nav-link" href="/admin/kelas">
+        <a class="nav-link" href="/admin/datauser">
           <i class="menu-icon mdi mdi-layers-outline"></i>
-          <span class="menu-title">Kelas</span>
+          <span class="menu-title">Data User</span>
         </a>
       </li>
       {{-- <li class="nav-item">

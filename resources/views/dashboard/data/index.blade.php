@@ -35,7 +35,7 @@
         <tr>
           <td>{{ $u->id }}</td>
           <td>{{ $u->nama }}</td>
-          <td>{{ $u->telepon }}</td>
+          <td>{{ $u->phone }}</td>
           <td>{{ $u->alamat }}</td>
           <td>{{ $u->kavling }}</td>
           <td>{{ $u->tipe }}</td>
